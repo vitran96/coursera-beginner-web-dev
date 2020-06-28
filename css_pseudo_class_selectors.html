@@ -5,7 +5,43 @@
         <title>Pseudo class selectors</title>
 
         <style>
-            /*  */
+            
+            header li {
+                list-style: none;
+            }
+
+            a:link, a:visited {
+                text-decoration: none;
+                background-color: green;
+                border: 1px solid blue;
+                color: black;
+
+                display: block;
+                width: 200px;
+                
+                text-align: center;
+                margin-bottom: 1px;
+            }
+
+            a:hover, a:active {
+                background-color: red;
+                color: purple;
+            }
+
+            /* 3rd link */
+            header li:nth-child(3) {
+                font-size: 24px;
+            }
+
+            section div:nth-child(odd) {
+                background-color: gray;
+            }
+
+            section div:nth-child(4):hover {
+                background-color: green;
+                cursor: pointer;
+            }
+
         </style>
     </head>
 
@@ -17,7 +53,6 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="http://goo.gl/V-Wl6s" target="_black">AngularJS course</a></li>
                 <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook fan page</a></li>
-
             </ul>
         </header>
 
