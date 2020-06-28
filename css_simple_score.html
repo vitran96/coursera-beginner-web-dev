@@ -5,7 +5,20 @@
         <title>CSS score testing</title>
 
         <style>
+            
+            header.navigation p {
+                color: blue;
+            }
 
+            /* Will be override by the style above */
+            p.blurb {
+                color: red;
+            }
+
+            /* Will override everything */
+            p {
+                color: green !important;
+            }
         </style>
     </head>
 
