@@ -16,6 +16,9 @@
 
             div#container {
                 background-color: #00FFFF;
+
+                position: relative;
+                top: 60px;
             }
 
             p {
@@ -27,6 +30,7 @@
 
             #p1 {
                 background-color: #A52A2A;
+
                 position: relative;
                 top: 65px;
                 left: 65px;
@@ -38,6 +42,10 @@
 
             #p3 {
                 background-color: #5F9EA0;
+
+                position: absolute; /* If there is no near parent with position as relative as an anchor -> this box will float at <html> tag */
+                top: 0;
+                left: 0;
             }
 
             #p4 {
