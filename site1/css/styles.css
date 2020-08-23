@@ -87,5 +87,25 @@ body {
 
 .navbar-header button.navbar-toggle {
     clear: both;
-    /* margin-top: -30px; */
+    margin-top: -30px;
+}
+
+/* Large devices */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Extra small devices */
+@media (max-width: 767px) {
+
 }
