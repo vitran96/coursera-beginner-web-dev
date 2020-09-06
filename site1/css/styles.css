@@ -108,6 +108,34 @@ body {
     box-shadow: 0 1px 5px 1px #cccccc;
 }
 
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+#map-tile > iframe {
+    width: 100%;
+    height: 250px;
+}
+
 /* Large devices */
 @media (min-width: 1200px) {
     .container .jumbotron {
@@ -189,5 +217,24 @@ body {
     .container .jumbotron {
         margin-top: 30px;
         padding: 0;
+    }
+
+    #menu-tile, #specials-tile {
+        width: 360px; /* may be too big for even smaller devices */
+        margin: 0 auto 15px;
+    }
+}
+
+/* For SUPER EXTRA small devices */
+@media (max-width: 476px) {
+
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
     }
 }
