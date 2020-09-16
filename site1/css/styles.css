@@ -231,6 +231,19 @@ body {
     text-align: center;
 }
 
+.menu-item-description {
+    padding-right: 30px;
+}
+
+h3.menu-item-title {
+    margin: 0 0 10px;
+}
+
+.menu-item-details {
+    font-size: .9em;
+    font-style: italic;
+}
+
 /* Large devices */
 @media (min-width: 1200px) {
     .container .jumbotron {
