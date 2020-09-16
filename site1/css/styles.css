@@ -344,10 +344,22 @@ h3.menu-item-title {
     .panel-footer section hr {
         width: 50%;
     }
+
+    .menu-item-photo {
+        margin-right: auto;
+    }
+
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+
+    .menu-item-description {
+        text-align: center;
+    }
 }
 
 /* For SUPER EXTRA small devices */
-@media (max-width: 476px) {
+@media (max-width: 479px) {
 
     .navbar-brand h1 {
         padding-top: 5px;
