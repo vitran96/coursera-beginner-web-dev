@@ -211,7 +211,7 @@ body {
     font-size: .6em;
 }
 
-.menu-item-photo div {
+.menu-item-photo {
     position: relative;
     border: 2px solid #3f0c1f;
     overflow: hidden;
