@@ -192,6 +192,45 @@ body {
     margin-bottom: 50px;
 }
 
+.menu-item-tile {
+    margin-bottom: 25px; /* I want to seperate this from the next row */
+}
+
+.menu-item-tile hr {
+    width: 80%; /* Make hr line shorter */
+}
+
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price span {
+    font-size: .6em;
+}
+
+.menu-item-photo div {
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+
 /* Large devices */
 @media (min-width: 1200px) {
     .container .jumbotron {
