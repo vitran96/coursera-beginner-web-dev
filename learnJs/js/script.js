@@ -46,3 +46,15 @@
 //     console.log("x == y");
 // else
 //     console.log("x != y");
+
+// ALL FALSE condition
+if (false ||
+    null ||
+    undefined ||
+    "" ||
+    0 ||
+    NaN) {
+    console.log("Never executed line");
+}
+else
+    console.log("ALL FALSE")
