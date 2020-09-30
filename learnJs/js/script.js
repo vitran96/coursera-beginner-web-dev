@@ -113,3 +113,49 @@
 
 // console.log(company);
 
+// function test() {
+//     console.log(this);
+//     this.myName = "Chris";
+// }
+
+// test();
+// console.log(window.myName);
+
+// FUNCTION CONSTRUCTOR
+// function Circle (radius) {
+//     this.radius = radius;
+    // this.getArea... will be create every time new Circle is used
+    // this.getArea = function() {
+    //     return Math.PI * Math.pow(this.radius, 2);
+    // }
+    // console.log(this);
+    // return {}; // => this will return Object{}
+// }
+
+// Prototype to make internal function not create again every single time
+// Circle.prototype.getArea = function() {
+//     return Math.PI * Math.pow(this.radius, 2);
+// }
+
+// var myCircle = new Circle(10); // OBJECT of a name Circle
+// var myCircle = Circle(10); // Use Circle as regular function. Nothing to return so return "undefined"
+// console.log(myCircle);
+// console.log(myCircle.getArea());
+
+// var literalCircle = {
+//     radius: 10,
+
+//     getArea: function() {
+//         // console.log(this);
+//         var self = this;
+//         var changeRadius = function() {
+//             this.radius = 20; // THIS is WINDOWS, not literalCircle
+//             self.radius = 50; // SELF is actually the current literalCircle
+//         }
+//         changeRadius();
+//         console.log(this.radius); // THIS is the current literalCircle
+//         return Math.PI * Math.pow(this.radius, 2);
+//     }
+// }
+
+// console.log(literalCircle.getArea());
