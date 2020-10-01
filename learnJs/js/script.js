@@ -113,3 +113,127 @@
 
 // console.log(company);
 
+// Create object literal
+// var facebook = {
+//     name: "Facebook",
+//     ceo: {
+//         firstName: "Mark",
+//         favColor: "blue"
+//     },
+//     $stock: 110,
+//     "stock of company": 110
+// };
+
+// console.log(facebook);
+
+// function mult(x, y) {
+//     return x * y;
+// }
+
+// console.log(mult(5, 3));
+// mult.version = "v.1.0.0";
+
+// console.log(mult.version);
+// console.log(mult.toString());
+
+// function makeMultiplier(multiplier) {
+//     var myFunc = function (x) {
+//         return multiplier * x;
+//     };
+
+//     return myFunc;
+// }
+
+// var multiplyBy3 = makeMultiplier(3);
+// console.log(multiplyBy3(10));
+
+// var doubleAll = makeMultiplier(2);
+// console.log(doubleAll(100));
+
+// function doOperation(x, operation) {
+//     return operation(x);
+// }
+
+// var result = doOperation(5, multiplyBy3);
+// console.log(result);
+
+// Arrays
+// var array = new Array();
+// array[0] = "Chris";
+// array[1] = 2;
+// array[2] = function(name) {
+//     console.log("Hello " + name);
+// };
+// array[3] = {course: "Html, CSS & JS"};
+
+// console.log(array);
+
+// Short hand array creation
+// var names = ["Chris", "Hao", "Duy"];
+// console.log(names);
+
+// for (var i = 0; i < names.length; i++)
+// {
+//     console.log(names[i]);
+// }
+
+// names[100] = "Khang";
+
+// var names2 = ["Chris", "Hao", "Duy"];
+
+// var myObj = {
+//     name: "Chris",
+//     course: "HTML/CSS/JS",
+//     platform: "Coursera"
+// };
+
+// for (var prop in myObj)
+// {
+//     console.log(prop + ": " + myObj[prop]);
+// }
+
+// for (var name in names2)
+// {
+//     console.log("Hello " + names[name]);
+// }
+
+// Closures
+// function makeMult(multiplier) {
+//     function b() {
+//         console.log("Multiplier is " + multiplier);
+//     }
+//     b();
+
+//     return (
+//         function(x) {
+//             return multiplier * x;
+//         }
+//     );
+// }
+
+// var doubleAll = makeMult(2);
+// console.log(doubleAll(10));
+
+// Below will conflict with script2.js
+// var name = "Chris";
+// function sayHello() {
+//     console.log("Hello " + name);
+// }
+
+// Fake namespace
+// var chrisGreeter = {};
+// chrisGreeter.name = "Chris";
+// chrisGreeter.sayHello = function() {
+//     console.log("Hello " + chrisGreeter.name);
+// };
+
+(function(window) {
+    var chrisGreeter = {};
+    chrisGreeter.name = "Chris";
+    var greeting = "Hello ";
+    chrisGreeter.sayHello = function() {
+        console.log(greeting + chrisGreeter.name);
+    };
+
+    window.chrisGreeter = chrisGreeter;
+})(window);
