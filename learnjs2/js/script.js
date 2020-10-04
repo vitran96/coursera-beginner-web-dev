@@ -1,33 +1,49 @@
-// This will fail because this script load before the html page
-//console.log(document.getElementById("title"));
+document.addEventListener("DOMContentLoaded",
+    function(event) {
+        function sayHello(event) {
 
-//console.log(document instanceof HTMLDocument);
+            console.log(event);
 
-function sayHello() {
+            // This will fail because this script load before the html page
+            //console.log(document.getElementById("title"));
 
-    // Normally 'this' in function should point to global context (window)
-    console.log(this);
+            //console.log(document instanceof HTMLDocument);
 
-    var name = document.getElementById("name").value;
-    //var message = "Hello " + name + "!";
-    var message = "<h2>Hello " + name + "!</h2>"; // This is literal string, not work with textContent
+            // Normally 'this' in function should point to global context (window)
+            console.log(this);
 
-    //document.getElementById("content").textContent = message;
+            var name = document.getElementById("name").value;
+            //var message = "Hello " + name + "!";
+            var message = "<h2>Hello " + name + "!</h2>"; // This is literal string, not work with textContent
 
-    document.getElementById("content").innerHTML = message;
+            //document.getElementById("content").textContent = message;
 
-    if (name === "student") {
-        var title = document.querySelector("#title").textContent;
-        title += " & Lovin' it!";
+            document.getElementById("content").innerHTML = message;
 
-        document.querySelector("#title").textContent = title;
+            if (name === "student") {
+                var title = document.querySelector("#title").textContent;
+                title += " & Lovin' it!";
+
+                document.querySelector("#title").textContent = title;
+            }
+        }
+
+        // Unobstrusive event binding
+        // This will bind sayHello into the 'button' element.
+        // Now, 'this' will show button.
+        document.querySelector("button").addEventListener("click", sayHello);
+
+        // This will work as above addEventListener
+        // document.querySelector("button").onclick = sayHello;
+
+        document.querySelector("body")
+            .addEventListener("mousemove",
+            function(event) {
+                if (event.shiftKey) {
+                    console.log("x: " + event.clientX);
+                    console.log("Y: " + event.clientY);
+                }
+            }
+        );
     }
-}
-
-// Unobstrusive event binding
-// This will bind sayHello into the 'button' element.
-// Now, 'this' will show button.
-// document.querySelector("button").addEventListener("click", sayHello);
-
-// This will work as above addEventListener
-document.querySelector("button").onclick = sayHello;
+);
