@@ -16,11 +16,19 @@ function getRequestObj() {
 }
 
 ajaxUtils.sendGetRequest =
-    function(requestUrl, responseHandler) {
+    function(
+        requestUrl,
+        responseHandler,
+        isJsonResponse
+    ) {
         var request = getRequestObj();
         request.onreadystatechange =
             function() {
-                handleResponse(request, responseHandler);
+                handleResponse(
+                    request,
+                    responseHandler,
+                    isJsonResponse
+                );
             };
         request.open("GET", requestUrl, true);
         request.send(null); // For POST only
@@ -29,10 +37,21 @@ ajaxUtils.sendGetRequest =
 // Only calls user provided 'responseHandler'
 // function if response is ready
 // and not an error
-function handleResponse(request, responseHandler) {
+function handleResponse(
+    request,
+    responseHandler,
+    isJsonResponse
+) {
     if (request.readyState == 4 &&
-        request.status == 200) {
-        responseHandler(request);
+        request.status == 200
+    ) {
+        if (isJsonResponse == undefined)
+            isJsonResponse = true;
+
+        if (isJsonResponse)
+            responseHandler(JSON.parse(request.responseText));
+        else
+        responseHandler(request.responseText);
     }
 }
 
