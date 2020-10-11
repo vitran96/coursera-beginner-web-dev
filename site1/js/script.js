@@ -46,6 +46,21 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...)
         return string;
     };
 
+    // TODO: this part can be improved
+    var switchMenuToActive = function() {
+        // Remove Active from HOME
+        var classes = document.querySelector("#navHomeButton").className;
+        classes = classes.replace(new RegExp("active", "g"), "");
+        document.querySelector("#navHomeButton").className = classes;
+
+        // Add Active to MENU
+        classes = document.querySelector("#navMenuButton").className;
+        if (classes.indexOf("active") == -1) {
+            classes += " active";
+            document.querySelector("#navMenuButton").className = classes;
+        }
+    }
+
     document.addEventListener("DOMContentLoaded", function(event) {
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
@@ -85,6 +100,8 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...)
             // Retrieve single category snippet
                 $ajaxUtils.sendGetRequest(categoryHtml,
                     function (categoryHtml) {
+                        switchMenuToActive();
+
                         var categoriesViewHtml = buildCategoriesViewHtml(
                             categories,
                             categoriesTitleHtml,
@@ -126,6 +143,8 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...)
                 $ajaxUtils.sendGetRequest(
                     menuItemHtml,
                     function(menuItemHtml) {
+                        switchMenuToActive();
+
                         let menuItemsViewHtml = buildMenuItemsViewHtml(
                             categoryMenuItems,
                             menuItemsTitleHtml,
