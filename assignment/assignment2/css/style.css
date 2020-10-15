@@ -1,11 +1,7 @@
 
 
-/* Large devices */
-@media (min-width: 1200px) {
-}
-
 /* Medium devices */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
 }
 
 /* Small devices */
@@ -14,8 +10,4 @@
 
 /* Extra small devices */
 @media (max-width: 767px) {
-}
-
-/* For SUPER EXTRA small devices */
-@media (max-width: 479px) {
 }
