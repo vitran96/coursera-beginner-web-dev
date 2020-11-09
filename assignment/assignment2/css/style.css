@@ -1,4 +1,29 @@
+* {
+    box-sizing: border-box;
+}
 
+p {
+    /* make content inside flexiable when resizing */
+    width: 50%;
+    float: left;
+    /* border: 1px solid black */
+}
+
+#p1 {
+    background-color: #A52A2A;
+}
+
+#p2 {
+    background-color: #DEB887;
+}
+
+section {
+    clear: left;
+}
+
+div {
+    background-color: #00FFFF;
+}
 
 /* Medium devices */
 @media (min-width: 992px) {
