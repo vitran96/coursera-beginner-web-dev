@@ -9,28 +9,31 @@ h1 {
 
 p {
     /* border: 1px solid black; */
-    /* width: 90%; */
-    /* height: 150px; */
-    /* margin-right: auto; */
-    /* margin-left: auto; */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .card {
     border: 1px solid black;
-    /* padding-left: 5px; */
-    /* padding-right: 10px; */
     margin-right: auto;
     margin-left: auto;
+}
+
+.card-title {
+    position: relative;
+    display: block;
+    float: right;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .row {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.row > div {
-    /* background-color: #989898; */
 }
 
 /* Large devices */
