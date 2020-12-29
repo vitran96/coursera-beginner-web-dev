@@ -8,32 +8,52 @@ h1 {
 }
 
 p {
-    /* border: 1px solid black; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .card {
     border: 1px solid black;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
 }
 
 .card-title {
     position: relative;
     display: block;
     float: right;
-    width: 100px;
+    width: 110px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border: 1px solid black;
+
+    font-weight: bold;
 }
 
 .row {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#chicken-title {
+    background-color: rgb(236, 168, 179);
+}
+
+#beef-title {
+    background-color: rgba(179, 8, 8, 0.87);
+    color: white;
+}
+
+#sushi-title {
+    background-color: rgb(221, 221, 78);
 }
 
 /* Large devices */
