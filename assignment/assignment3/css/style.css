@@ -3,9 +3,22 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h2 {
     text-align: center;
     font-size: 175%;
+}
+
+.navbar-header button.navbar-toggle {
+    /* clear: both; */
+    /* margin-top: -30px; */
+}
+
+.navbar-brand h1 { /* Restaurant name */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.5;
 }
 
 /* p {
@@ -52,16 +65,16 @@ h1 {
 } */
 
 #chicken-title {
-    background-color: rgb(236, 168, 179);
+    /* background-color: rgb(236, 168, 179); */
 }
 
 #beef-title {
-    background-color: rgba(179, 8, 8, 0.87);
-    color: white;
+    /* background-color: rgba(179, 8, 8, 0.87); */
+    /* color: white; */
 }
 
 #sushi-title {
-    background-color: rgb(221, 221, 78);
+    /* background-color: rgb(221, 221, 78); */
 }
 
 /* Large devices */
