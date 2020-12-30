@@ -8,15 +8,15 @@ h1 {
     font-size: 175%;
 }
 
-p {
+/* p {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
-.card {
+/* .card {
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
@@ -25,9 +25,9 @@ p {
     background-color: gray;
 
     border: 1px solid black;
-}
+} */
 
-.card-title {
+/* .card-title {
     position: relative;
 
     display: block;
@@ -43,13 +43,13 @@ p {
     font-size: 125%;
 
     border: 1px solid black;
-}
+} */
 
-.row {
+/* .row {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 #chicken-title {
     background-color: rgb(236, 168, 179);
