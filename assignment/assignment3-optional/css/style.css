@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header-nav {
+    background-color: gray;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.navbar-brand > a > h1 {
+    color: black;
+}
+
+#navbarToggle {
+    border: 1px solid black;
+}
+
+#navbarToggle > span {
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 175%;
+}
+
+.navbar-brand h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.5;
+}
+
+#nav-list {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#nav-list a {
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#nav-list a:hover {
+    background: #e7e7e7;
+}
+
+#nav-list a span {
+    font-size: 1.4em;
+}
+
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#chicken, #beef, #sushi {
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
