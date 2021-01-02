@@ -65,3 +65,8 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Should think of different way */
+#chicken .text-center, #beef .text-center, #sushi .text-center {
+    font-weight: bold;
+    font-size: 125%;
+}
