@@ -54,19 +54,19 @@ h2 {
     font-size: 1.4em;
 }
 
-.row {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#chicken, #beef, #sushi {
+.custom-box {
     background-color: gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-/* Should think of different way */
-#chicken .text-center, #beef .text-center, #sushi .text-center {
+.custom-box > h3 {
+    padding-top: 10px;
+
     font-weight: bold;
     font-size: 125%;
 }
+
+.custom-box > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
